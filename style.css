@@ -136,4 +136,59 @@ url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fi
     right: 16px;
     bottom: 16px;
   }
+} 
+/* İletişim butonları */
+.contact-item {
+  padding: 18px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.contact-item span {
+  display: block;
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.contact-item strong {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.contact-actions .contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 16px;
+  border-radius: 7px;
+
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1;
+
+  width: auto;
+  border: none;
+}
+
+.contact-actions .call-btn {
+  background: #e51b23;
+  color: #fff;
+}
+
+.contact-actions .whatsapp-btn {
+  background: #25d366;
+  color: #fff;
+}
+
+.contact-actions .contact-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
 }
