@@ -10,4 +10,42 @@
 .footer{background:#0e1012;color:#8d9196;padding:30px 0;font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:20px}.whatsapp-float{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;font-size:13px;font-weight:800;z-index:60;box-shadow:0 12px 28px rgba(0,0,0,.25)}.whatsapp-float:hover{transform:translateY(-3px) scale(1.03)}
 @media(max-width:900px){.menu-btn{display:block}.menu{position:absolute;top:84px;left:0;right:0;background:#111418;display:none;flex-direction:column;gap:0;padding:12px 24px 22px}.menu.open{display:flex}.menu a{width:100%;padding:12px 0}.menu a:after{display:none}.services,.products-grid{grid-template-columns:1fr 1fr}.advantages{grid-template-columns:1fr 1fr}.about,.contact{grid-template-columns:1fr;gap:45px}.trust-grid>div{padding:24px 18px}.product-image{height:300px}}
 @media(max-width:620px){.container{width:min(100% - 30px,1180px)}.nav{height:72px}.brand img,.brand-logo{width:52px;height:52px}.brand strong{font-size:13px}.brand span{font-size:9px}.menu{top:72px}.hero{min-height:620px}.hero-content{padding:70px 0}.hero h1{font-size:42px;letter-spacing:-2px}.hero-text{font-size:15px}.btn{width:100%}.trust-grid{grid-template-columns:1fr}.trust-grid>div,.trust-grid>div:first-child{padding:17px 0;border-right:0;border-bottom:1px solid var(--line)}.section{padding:76px 0}.services,.products-grid,.advantages{grid-template-columns:1fr}.product-image{height:300px}.contact-card{padding:8px 20px}.contact-actions{flex-wrap:wrap}.contact-actions .contact-btn{flex:1}.footer-inner{flex-direction:column;gap:5px}.whatsapp-float{width:54px;height:54px;right:16px;bottom:16px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+.featured-service{background:var(--ink);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}.featured-service-inner{display:grid;grid-template-columns:.85fr 1.15fr;align-items:center;gap:70px;padding:52px 0}.featured-service .eyebrow{margin-bottom:12px}.featured-service h2{font-family:Manrope,sans-serif;font-size:clamp(30px,4vw,48px);line-height:1.1;letter-spacing:-2px}.featured-service-action{display:flex;align-items:center;gap:30px}.featured-service-action p{max-width:560px;color:#c5c8cb;font-size:15px;line-height:1.75}.featured-service-action .btn{flex:none}@media(max-width:900px){.featured-service-inner{grid-template-columns:1fr;gap:20px;padding:42px 0}.featured-service-action{justify-content:space-between}}@media(max-width:620px){.featured-service-inner{padding:38px 0}.featured-service-action{display:block}.featured-service-action p{margin-bottom:20px}.featured-service-action .btn{width:100%}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+/* ÜST MENÜ YAZILARINI BÜYÜT */
+.menu a {
+    font-size: 18px;
+    font-weight: 700;
+}
+/* Ana slogan açıklaması */
+.hero-main-description {
+    max-width: 700px;
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Hidrolik Makine Tamiri alanı */
+.hero-service {
+    margin-top: 42px;
+    max-width: 700px;
+}
+
+.hero-service h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin: 0 0 14px;
+}
+
+.hero-service p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Butonları hizmet açıklamasından ayır */
+.hero-service + .hero-actions {
+    margin-top: 28px;
+}
